@@ -1,6 +1,5 @@
-# ETRI-ERC 논문 경진 대회
-## DAEM-ERC: Data Augmentation and Ensemble-based Model for Emotion Recognition in Conversation
-## Abstract
+# DAEM-ERC: Data Augmentation and Ensemble-based Model for Emotion Recognition in Conversation
+# Abstract
 > 대화에서의 감정 인식(Emotion Recognition in Conversations, ERC)은 사람과 컴퓨터 간의 상호작용을 위한 핵심 기술이다. 
 > 감정 인식을 위해 사용되는 데이터에는 오디오, 비디오, 텍스트 등이 있고, 이러한 데이터들로부터 얻은 정서적 정보를 결합하여 멀티모달 감정 인식을 구현할 수 있다. 
 > 본 연구에서는 발화 텍스트, 오디오, 생체 신호 데이터를 사용하여 각 데이터에 특화된 개별 분류기를 생성한 뒤 Weighted soft voting 앙상블을 통해 최종 감정 분류를 진행하는 멀티모달 감정 인식 모델을 제안한다. 
@@ -9,10 +8,10 @@
 > 
 
 
-## Model Architecture
+# Model Architecture
 ![model architecture](/images/DAEM-ERC%20모델%20구조.png)
 
-##  Directory
+#  Directory
 ```commandline
 +-- text
     +-- TextCNN for ERC.ipynb
@@ -24,18 +23,18 @@
     +-- biosensor_model.ipynb
     +-- biosensor_preprocessing.ipynb
 ```
-## Dataset
+# Dataset
 
-- 한국어 멀티모달 감정 데이터셋 2020(KEMDy2020)
+- [한국어 멀티모달 감정 데이터셋 2020(KEMDy2020)](https://nanum.etri.re.kr/share/kjnoh/KEMDy20?lang=ko_KR)
 
-## Results
+# Results
 ### 1) 개별 분류 모델의 F1 스코어 
 <table>
-  <thead align="center" bgcolor="lightgray">
+  <tr align="center" bgcolor="lightgray">
     <td rowspan="2">모델</td>
     <td colspan="9">F1 score</td>
-  </thead>
-<tr>
+  </tr>
+<tr align="center">
     <td>분노</td>
     <td>혐오</td>
     <td>공포</td>
@@ -46,7 +45,7 @@
     <td>Macro</td>
     <td>Weighted</td>
 </tr>
-  <tr bgcolor="none">
+  <tr bgcolor="none" align="center">
     <td>텍스트</td>
     <td>0.09</td>
     <td>0.29</td>
@@ -58,7 +57,7 @@
     <td>0.33</td>
     <td>0.86</td>
   </tr>
-  <tr bgcolor="none">
+  <tr bgcolor="none" align="center">
     <td>오디오</td>
     <td>0.07</td>
     <td>0.12</td>
@@ -70,7 +69,7 @@
     <td>0.27</td>
     <td>0.90</td>
   </tr>
-  <tr bgcolor="none">
+  <tr bgcolor="none" align="center">
     <td>생체 신호</td>
     <td>0.05</td>
     <td>0.00</td>
@@ -86,11 +85,11 @@
 
 ### 2) 앙상블 모델 성능 비교
 <table>
-  <thead align="center" bgcolor="lightgray">
+  <tr align="center">
     <td rowspan="2">앙상블 기법</td>
     <td colspan="9">F1 score</td>
-  </thead>
-<tr>
+  </tr>
+<tr align="center">
     <td>분노</td>
     <td>혐오</td>
     <td>공포</td>
@@ -100,7 +99,7 @@
     <td>놀람</td>
     <td>Macro</td>
     <td>Weighted</td>
-</tr>
+</tr align="center">
   <tr bgcolor="none">
     <td>Soft voting</td>
     <td>0.00</td>
@@ -113,7 +112,7 @@
     <td>0.22</td>
     <td>0.93</td>
   </tr>
-  <tr bgcolor="none">
+  <tr bgcolor="none" align="center">
     <td>Weighted soft voting</td>
     <td>0.04</td>
     <td>0.21</td>
@@ -127,7 +126,10 @@
   </tr>
 </table>
 
-## Requirments
+# Requirments
+### 1) Files
+- FastText 한국어 사전 학습 모델
+### 2) Libraries
 ```commandline
  - torchmetrics == 0.11.4
  - torch == 2.0.0+cu118
@@ -144,9 +146,8 @@
  
  (for bio)
  - imbalanced-learn == 0.10.1
-
 ```
-## References
+# References
 
 [1] Wei et al., "Eda: Easy data augmentation techniques 
 for boosting performance on text classification tasks." 
