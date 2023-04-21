@@ -15,6 +15,8 @@
 
 #  Directory
 ```commandline
++-- READ.ME
++-- total_preprocessing.ipynb  : 공통 데이터 전처리 실행 코드 (가장 먼저 실행해야 함.) 
 +-- text
     +-- TextCNN for ERC.ipynb
     +-- text_augmentation.ipynb
