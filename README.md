@@ -34,6 +34,30 @@
 
 - [한국어 멀티모달 감정 데이터셋 2020(KEMDy2020)](https://nanum.etri.re.kr/share/kjnoh/KEMDy20?lang=ko_KR)
 
+# How to use?
+
+### 1) 먼저 위 데이터 셋을 다운받은 후 KEMDy20_v1_1 폴더에 아래와 같은 새 폴더들을 생성
+```commandline
++-- KEMDy20_v1_1
+    +-- new
+	    +-- annotation
+	    +-- text
+	    +-- wav
+	    +-- sensor
+```
+### 2) 이후 total_preprocessing.ipynb 파일의 전처리 셀들을 모두 실행
+    (이때 전처리 2 진행하기 전, 생체 신호 데이터의 전처리를 일부 수행할 것)   
+   
+--> KEMDy20_v1_1/new/annotation 폴더 아래에 all_annotation, train_origin, test_origin 피클 파일 저장됨
+
+### 3) 위 데이터 셋을 이용하여 데이터 각각에 대한 전처리 및 감정 분류 진행   
+
+     - Wav: KEMDy20_v1_1/new/wav/wav_run.ipynb 파일의 모든 셀 실행  
+
+--> 개별 분류기에 따른 감정 분류 결과 피클 파일 저장됨
+
+### 4) 마지막으로 Ensemble.ipynb 파일을 실행하여 weighted soft voting 앙상블 진행
+
 # Results
 ### 1) 개별 분류 모델의 F1 스코어 
 <table>
