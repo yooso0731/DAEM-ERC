@@ -130,7 +130,7 @@
 
 # Requirments
 ### 1) Files
-- FastText 한국어 사전 학습 모델
+- [FastText 사전 학습 모델](https://fasttext.cc/docs/en/pretrained-vectors.html): 한국어 bin+text 
 ### 2) Libraries
 ```commandline
  - torchmetrics == 0.11.4
@@ -139,14 +139,8 @@
  - pandas == 1.5.3
  - numpy == 1.22.4
  - sklearn == 1.2.2
-
- (for text)
  - gensim == 3.8.3
-
- (for audio)
  - librosa == 0.10.0.post2
- 
- (for bio)
  - imbalanced-learn == 0.10.1
 ```
 # References
