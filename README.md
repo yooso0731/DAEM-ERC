@@ -52,7 +52,10 @@
 
 ### 3) 위 데이터 셋을 이용하여 데이터 각각에 대한 전처리 및 감정 분류 진행   
 
-     - Wav: KEMDy20_v1_1/new/wav/wav_run.ipynb 파일의 모든 셀 실행  
+     - Wav: KEMDy20_v1_1/new/wav/wav_run.ipynb 파일의 모든 셀 실행 
+     - bio:
+       - KEMDy20_v1_1/new/sensor/biosensor_preprocessing.ipynb 파일의 모든 셀 실행
+       - KEMDy20_v1_1/new/sensor/biosensor_model.ipynb 파일의 모든 셀 실행
 
 --> 개별 분류기에 따른 감정 분류 결과 피클 파일 저장됨
 
