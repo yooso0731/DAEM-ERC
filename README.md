@@ -44,6 +44,9 @@
 	    +-- text
 	    +-- wav
 	    +-- sensor
+	    	+-- EDA
+		+-- Temp
+		+-- bio_train
 ```
 ### 2) 이후 total_preprocessing.ipynb 파일의 전처리 셀들을 모두 실행
     (이때 전처리 2 진행하기 전, 생체 신호 데이터의 전처리를 일부 수행할 것)   
