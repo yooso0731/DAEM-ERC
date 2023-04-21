@@ -127,8 +127,6 @@
   </tr>
 </table>
 
----
-
 ## Requirments
 ```commandline
  - torchmetrics == 0.11.4
