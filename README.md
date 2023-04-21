@@ -17,6 +17,7 @@
 ```commandline
 +-- READ.ME
 +-- total_preprocessing.ipynb  : 공통 데이터 전처리 실행 코드 (가장 먼저 실행해야 함.) 
++-- ensemble.ipynb             : Weighted soft voting 앙상블 진행 코드
 +-- text
     +-- TextCNN for ERC.ipynb
     +-- text_augmentation.ipynb
@@ -28,7 +29,7 @@
     +-- wav_classifier.py : 오디오 데이터에 대한 분류기 정의 코드
 +-- bio
     +-- biosensor_preprocessing.ipynb : 생체 신호 데이터 전처리 과정 코드
-    +-- biosensor_model.ipynb : 생체 신호 분류 모델 훈련 및 평가 과정 코드
+    +-- biosensor_model.ipynb         : 생체 신호 분류 모델 훈련 및 평가 과정 코드
 ```
 # Dataset
 
