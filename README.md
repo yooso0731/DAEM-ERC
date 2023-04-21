@@ -101,8 +101,8 @@
     <td>놀람</td>
     <td>Macro</td>
     <td>Weighted</td>
-</tr align="center"  align="center">
-  <tr bgcolor="none">
+</tr>
+  <tr bgcolor="none"  align="center">
     <td>Soft voting</td>
     <td>0.00</td>
     <td>0.00</td>
