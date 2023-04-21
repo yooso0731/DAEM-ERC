@@ -8,12 +8,10 @@
 > 결과적으로 우리의 제안 모델은 소수 클래스 감정 분류에 강점을 가지며 Weighted f1 스코어 0.91을 달성했다.
 > 
 
----
 
 ## Model Architecture
 ![model architecture](/images/DAEM-ERC%20모델%20구조.png)
 
----
 ##  Directory
 ```commandline
 +-- text
@@ -26,12 +24,10 @@
     +-- biosensor_model.ipynb
     +-- biosensor_preprocessing.ipynb
 ```
----
 ## Dataset
 
 - 한국어 멀티모달 감정 데이터셋 2020(KEMDy2020)
 
----
 ## Results
 ### 1) 개별 분류 모델의 F1 스코어 
 <table>
@@ -152,7 +148,6 @@
  - imbalanced-learn == 0.10.1
 
 ```
----
 ## References
 
 [1] Wei et al., "Eda: Easy data augmentation techniques 
