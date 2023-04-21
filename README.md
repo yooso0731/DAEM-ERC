@@ -130,7 +130,7 @@
 
 # Requirments
 ### 1) Files
-- [FastText 사전 학습 모델](https://fasttext.cc/docs/en/pretrained-vectors.html): 한국어 bin+text 
+- [FastText 사전 학습 모델](https://fasttext.cc/docs/en/pretrained-vectors.html) - 한국어 bin+text 
 ### 2) Libraries
 ```commandline
  - torchmetrics == 0.11.4
