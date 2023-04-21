@@ -20,8 +20,10 @@
     +-- text_augmentation.ipynb
     +-- text_tokenization.ipynb
     +-- text_preprocessing.ipynb
-+-- audio
-    +-- 
++-- wav
+    +-- wav_run.ipynb     : 전처리 ~ 감정 분류(+출력값 저장)까지의 실행 코드
+    +-- wav_preprocess.py : 오디오 데이터 전처리를 위한 클래스 정의 코드
+    +-- wav_classifier.py : 오디오 데이터에 대한 분류기 정의 코드
 +-- bio
     +-- biosensor_model.ipynb
     +-- biosensor_preprocessing.ipynb
