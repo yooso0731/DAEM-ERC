@@ -11,7 +11,7 @@
 
 
 # Model Architecture
-![model architecture](/images/DAEM-ERC%20모델%20구조.png)
+<img src="/images/DAEM-ERC%20모델%20구조.png" width="70%" height="60%" title="모델 구조" alt="Model Architecture"></img><br/>
 
 #  Directory
 ```commandline
