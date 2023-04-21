@@ -35,7 +35,14 @@
 - [한국어 멀티모달 감정 데이터셋 2020(KEMDy2020)](https://nanum.etri.re.kr/share/kjnoh/KEMDy20?lang=ko_KR)
 
 # How to use?
-
+### ❗프로젝트 디렉터리❗
+- 코드를 실행하기 앞서, 프로젝트는 아래와 같은 디렉터리로 구성되어 있어야 함
+```
++-- ERC_ETRI(사용자지정)
+	+-- dataset
+		+-- KEMDy20_v1_1
+```
+- 모든 코드는 **ERC_ETRI(사용자지정) 폴더에 위치하여 실행**되어야 함
 ### 1) 먼저 위 데이터 셋을 다운받은 후 KEMDy20_v1_1 폴더에 아래와 같은 새 폴더들을 생성
 ```commandline
 +-- KEMDy20_v1_1
