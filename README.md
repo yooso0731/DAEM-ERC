@@ -67,10 +67,10 @@
        - KEMDy20_v1_1/new/sensor/1. biosensor_preprocessing.ipynb 파일의 모든 셀 실행
        - KEMDy20_v1_1/new/sensor/2. biosensor_model.ipynb 파일의 모든 셀 실행
      - text:
-       - '1. text_preprocessing.ipynb' 파일의 모든 셀 실행
-       - '2. text_tokenization.ipynb' 파일의 모든 셀 실행
-       - '3. text_augmentation.ipynb' 파일의 모든 셀 실행
-       - '4. TextCNN for ERC.ipynb' 파일의 모든 셀 실행
+       - ETRI_ERC/1. text_preprocessing.ipynb 파일의 모든 셀 실행
+       - ETRI_ERC/2. text_tokenization.ipynb 파일의 모든 셀 실행
+       - ETRI_ERC/3. text_augmentation.ipynb 파일의 모든 셀 실행
+       - ETRI_ERC/4. TextCNN for ERC.ipynb 파일의 모든 셀 실행
 
 --> 개별 분류기에 따른 감정 분류 결과 피클 파일 저장됨
 
