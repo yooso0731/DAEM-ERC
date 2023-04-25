@@ -19,10 +19,10 @@
 +-- total_preprocessing.ipynb  : 공통 데이터 전처리 실행 코드 (가장 먼저 실행해야 함.) 
 +-- ensemble.ipynb             : Weighted soft voting 앙상블 진행 코드
 +-- text
-    +-- TextCNN for ERC.ipynb
-    +-- text_augmentation.ipynb
-    +-- text_tokenization.ipynb
-    +-- text_preprocessing.ipynb
+    +-- TextCNN for ERC.ipynb    : TextCNN 분류 모델 훈련 및 평가 과정 코드
+    +-- text_augmentation.ipynb  : 텍스트 데이터 증강을 위한 코드
+    +-- text_tokenization.ipynb  : 텍스트 데이터 토큰화를 위한 코드
+    +-- text_preprocessing.ipynb : 텍스트 데이터 전처리를 위한 코드
 +-- wav
     +-- wav_run.ipynb     : 전처리 ~ 감정 분류(+출력값 저장)까지의 실행 코드
     +-- wav_preprocess.py : 오디오 데이터 전처리를 위한 클래스 정의 코드
