@@ -15,17 +15,17 @@
 #  Directory
 ```commandline
 +-- READ.ME
-+-- total_preprocessing.ipynb  : 공통 데이터 전처리 실행 코드 (가장 먼저 실행해야 함.) 
-+-- ensemble.ipynb             : Weighted soft voting 앙상블 진행 코드
++-- total_preprocessing.ipynb            : 공통 데이터 전처리 실행 코드 (가장 먼저 실행해야 함.) 
++-- ensemble.ipynb                       : Weighted soft voting 앙상블 진행 코드
 +-- text
-    +-- 1. text_preprocessing.ipynb : 텍스트 데이터 전처리를 위한 코드
-    +-- 2. text_tokenization.ipynb  : 텍스트 데이터 토큰화를 위한 코드
-    +-- 3. text_augmentation.ipynb  : 텍스트 데이터 증강을 위한 코드
-    +-- 4. TextCNN for ERC.ipynb    : TextCNN 분류 모델 훈련 및 평가 과정 코드
+    +-- 1. text_preprocessing.ipynb      : 텍스트 데이터 전처리를 위한 코드
+    +-- 2. text_tokenization.ipynb       : 텍스트 데이터 토큰화를 위한 코드
+    +-- 3. text_augmentation.ipynb       : 텍스트 데이터 증강을 위한 코드
+    +-- 4. TextCNN for ERC.ipynb         : TextCNN 분류 모델 훈련 및 평가 과정 코드
 +-- wav
-    +-- wav_run.ipynb     : 전처리 ~ 감정 분류(+출력값 저장)까지의 실행 코드
-    +-- wav_preprocess.py : 오디오 데이터 전처리를 위한 클래스 정의 코드
-    +-- wav_classifier.py : 오디오 데이터에 대한 분류기 정의 코드
+    +-- wav_run.ipynb                    : 전처리 ~ 감정 분류(+출력값 저장)까지의 실행 코드
+    +-- wav_preprocess.py                : 오디오 데이터 전처리를 위한 클래스 정의 코드
+    +-- wav_classifier.py                : 오디오 데이터에 대한 분류기 정의 코드
 +-- bio
     +-- 1. biosensor_preprocessing.ipynb : 생체 신호 데이터 전처리 과정 코드
     +-- 2. biosensor_model.ipynb         : 생체 신호 분류 모델 훈련 및 평가 과정 코드
