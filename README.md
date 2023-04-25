@@ -27,8 +27,8 @@
     +-- wav_preprocess.py : 오디오 데이터 전처리를 위한 클래스 정의 코드
     +-- wav_classifier.py : 오디오 데이터에 대한 분류기 정의 코드
 +-- bio
-    +-- biosensor_preprocessing.ipynb : 생체 신호 데이터 전처리 과정 코드
-    +-- biosensor_model.ipynb         : 생체 신호 분류 모델 훈련 및 평가 과정 코드
+    +-- 1. biosensor_preprocessing.ipynb : 생체 신호 데이터 전처리 과정 코드
+    +-- 2. biosensor_model.ipynb         : 생체 신호 분류 모델 훈련 및 평가 과정 코드
 ```
 # Dataset
 
