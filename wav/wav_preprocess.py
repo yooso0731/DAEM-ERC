@@ -121,8 +121,8 @@ class AudioUtill():
 class data_load():
     def __init__(self, df, data_path):
         ##################################
-        # df: annotation data file
-        # data_path: path to save dataset
+        # df: annotation data file (all_annotation)
+        # data_path: dir of wav file (~/wav 까지)
         ##################################
         
         self.df = df
@@ -170,15 +170,16 @@ class data_load():
             aug_list.append(trans)
         return aug_list
     
-    def get_data(self, method, aug=False, aug_dict=None): 
+    def get_data(self, method, fold, aug=False, aug_dict=None): 
         ####################################
         # method: {'mfcc', 'mel', 'both'}
+        # fold: {'train', 'test'}
         # aug: {True, False}
         # aug_dict: {emotion_id: augmentation size} dict
         ## Return: final dataset (x, y)
         ####################################
         
-        get_df = self.df
+        get_df = self.df.loc[self.df.fold==fold, :]
         emotion_id = get_df.emotion_id.tolist()
         
         x = []
