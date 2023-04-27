@@ -23,7 +23,7 @@
     +-- 3. text_augmentation.ipynb       : 텍스트 데이터 증강을 위한 코드
     +-- 4. TextCNN for ERC.ipynb         : TextCNN 분류 모델 훈련 및 평가 과정 코드
 +-- wav
-    +-- wav_run.ipynb                    : 전처리 ~ 감정 분류(+출력값 저장)까지의 실행 코드
+    +-- 1. wav_run.ipynb                 : 전처리 ~ 감정 분류(+출력값 저장)까지의 실행 코드
     +-- wav_preprocess.py                : 오디오 데이터 전처리를 위한 클래스 정의 코드
     +-- wav_classifier.py                : 오디오 데이터에 대한 분류기 정의 코드
 +-- bio
@@ -43,24 +43,11 @@
 		+-- KEMDy20_v1_1
 ```
 - 모든 코드는 **ERC_ETRI(사용자지정) 폴더에 위치하여 실행**되어야 함
-### 1) 먼저 위 데이터 셋을 다운받은 후 KEMDy20_v1_1 폴더에 아래와 같은 새 폴더들을 생성
-```commandline
-+-- KEMDy20_v1_1
-    +-- new
-	    +-- annotation
-	    +-- text
-	    +-- wav
-	    +-- sensor
-	    	+-- EDA
-		+-- Temp
-		+-- bio_train
-```
-### 2) 이후 total_preprocessing.ipynb 파일의 전처리 셀들을 모두 실행
-    (이때 전처리 2 진행하기 전, 생체 신호 데이터의 전처리를 일부 수행할 것)   
+### 1) 먼저 total_preprocessing.ipynb 파일의 전처리 셀들을 모두 실행
    
 --> KEMDy20_v1_1/new/annotation 폴더 아래에 all_annotation, train_origin, test_origin 피클 파일 저장됨
 
-### 3) 위 데이터 셋을 이용하여 데이터 각각에 대한 전처리 및 감정 분류 진행   
+### 2) 위 데이터 셋을 이용하여 데이터 각각에 대한 전처리 및 감정 분류 진행   
 
      - Wav: KEMDy20_v1_1/new/wav/1. wav_run.ipynb 파일의 모든 셀 실행 
      - bio:
@@ -74,7 +61,7 @@
 
 --> 개별 분류기에 따른 감정 분류 결과 피클 파일 저장됨
 
-### 4) 마지막으로 Ensemble.ipynb 파일을 실행하여 weighted soft voting 앙상블 진행
+### 3) 마지막으로 Ensemble.ipynb 파일을 실행하여 weighted soft voting 앙상블 진행
 
 # Results
 ### 1) 개별 분류 모델의 F1 스코어 
